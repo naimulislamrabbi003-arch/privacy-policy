@@ -1,13 +1,257 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Privacy Policy</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy • ScreenSnap</title>
+  <link rel="icon" type="image/x-icon" href="/icon128.png">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Space+Grotesk:wght@500;600&amp;display=swap');
+        
+        :root {
+            --tw-color-primary: #00d4ff;
+        }
+        
+        * {
+            transition-property: color, background-color, border-color, text-decoration-color, fill, stroke;
+            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+            transition-duration: 150ms;
+        }
+        
+        .hero-bg {
+            background: linear-gradient(135deg, #0a0a0a 0%, #1a1a2e 100%);
+        }
+        
+        .prose p {
+            font-size: 1.1rem;
+            line-height: 1.75;
+        }
+    </style>
 </head>
-<body>
-  <h1>Privacy Policy</h1>
-  <p>This Chrome extension does not collect, store, or share any personal data.</p>
-  <p>All features run locally in your browser. No data is sent to any server.</p>
-  <p>Permissions are used only to provide core functionality like screenshots and downloads.</p>
-  <p>We do not use tracking or analytics.</p>
+<body class="bg-slate-950 text-slate-200 font-sans">
+
+    <!-- NAVIGATION BAR -->
+    <nav class="border-b border-slate-800 bg-slate-950 sticky top-0 z-50">
+        <div class="max-w-screen-2xl mx-auto px-8 py-5 flex items-center justify-between">
+            
+            <!-- Logo -->
+            <div class="flex items-center gap-x-3">
+                <div class="w-9 h-9 bg-gradient-to-br from-cyan-400 to-blue-500 rounded-2xl flex items-center justify-center shadow-lg shadow-cyan-500/30 text-2xl">
+                    📸
+                </div>
+                <div>
+                    <span class="font-bold text-3xl tracking-tighter text-white" style="font-family: 'Space Grotesk', sans-serif;">ScreenSnap</span>
+                </div>
+                <span class="px-3 py-1 text-xs font-medium bg-cyan-400/10 text-cyan-400 rounded-3xl border border-cyan-400/30">Chrome Extension</span>
+            </div>
+
+            <!-- Menu -->
+            <div class="hidden md:flex items-center gap-x-8 text-sm font-medium">
+                <a href="#" onclick="window.location.reload()" class="hover:text-cyan-400">Home</a>
+                <a href="#" class="hover:text-cyan-400">Features</a>
+                <a href="#" class="text-cyan-400 font-semibold">Privacy Policy</a>
+                <a href="#" class="hover:text-cyan-400">Support</a>
+                <a href="#" class="hover:text-cyan-400">Changelog</a>
+            </div>
+
+            <div class="flex items-center gap-x-4">
+                <a href="https://chromewebstore.google.com" 
+                   target="_blank"
+                   class="flex items-center gap-x-2 bg-white text-slate-950 hover:bg-cyan-400 hover:text-slate-950 px-6 py-3 rounded-3xl font-semibold text-sm shadow-lg shadow-cyan-500/20">
+                    <span>Add to Chrome</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M14 5l7 7-7 7" />
+                    </svg>
+                </a>
+                
+                <button onclick="window.location.reload()" 
+                        class="md:hidden w-10 h-10 bg-slate-900 hover:bg-slate-800 border border-slate-700 rounded-2xl flex items-center justify-center">
+                    <span class="text-xl">📸</span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO / HEADER -->
+    <div class="hero-bg py-16">
+        <div class="max-w-screen-2xl mx-auto px-8">
+            <div class="max-w-3xl mx-auto text-center">
+                <div class="inline-flex items-center gap-x-2 bg-slate-900 border border-slate-700 text-cyan-400 text-sm font-medium px-6 py-2.5 rounded-3xl mb-6">
+                    <div class="w-2 h-2 bg-cyan-400 rounded-full animate-pulse"></div>
+                    LAST UPDATED: APRIL 02, 2026
+                </div>
+                
+                <h1 class="text-6xl md:text-7xl font-bold tracking-tighter leading-none text-white mb-6" style="font-family: 'Space Grotesk', sans-serif;">
+                    Privacy Policy
+                </h1>
+                
+                <p class="text-2xl text-slate-400 max-w-xl mx-auto">
+                    Your screenshots stay yours. 
+                    <span class="text-cyan-400">Zero data collection.</span>
+                </p>
+                
+                <div class="flex justify-center gap-4 mt-10">
+                    <div class="flex items-center gap-x-1.5 text-sm bg-slate-900/70 backdrop-blur-md border border-slate-700 px-5 h-11 rounded-3xl">
+                        <span class="text-emerald-400">✅</span>
+                        100% Local
+                    </div>
+                    <div class="flex items-center gap-x-1.5 text-sm bg-slate-900/70 backdrop-blur-md border border-slate-700 px-5 h-11 rounded-3xl">
+                        <span class="text-emerald-400">✅</span>
+                        No Servers
+                    </div>
+                    <div class="flex items-center gap-x-1.5 text-sm bg-slate-900/70 backdrop-blur-md border border-slate-700 px-5 h-11 rounded-3xl">
+                        <span class="text-emerald-400">✅</span>
+                        No Tracking
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div class="max-w-screen-2xl mx-auto px-8 py-16">
+        <div class="max-w-3xl mx-auto bg-white text-slate-900 rounded-3xl shadow-2xl shadow-slate-950/50 p-10 md:p-16">
+            
+            <!-- Provided Content (styled beautifully) -->
+            <div class="prose prose-slate prose-headings:font-semibold prose-headings:text-slate-900 prose-p:text-slate-700 max-w-none">
+                
+                <p class="text-xl leading-relaxed border-l-4 border-cyan-400 pl-6 py-1 mb-10">
+                    This Chrome extension does not collect, store, or share any personal data.
+                </p>
+
+                <h2 class="text-3xl font-semibold mt-12 mb-6 flex items-center gap-3">
+                    <span class="text-cyan-400">🔒</span> 
+                    How We Work
+                </h2>
+                <p class="text-lg">
+                    All features, including screenshot capture, image editing, and bulk processing, are performed locally within your browser. 
+                    No data is transmitted to external servers.
+                </p>
+
+                <h2 class="text-3xl font-semibold mt-12 mb-6 flex items-center gap-3">
+                    <span class="text-cyan-400">⚙️</span> 
+                    Permissions
+                </h2>
+                <p class="text-lg">
+                    Permissions such as <span class="font-mono bg-slate-100 px-2 py-0.5 rounded">activeTab</span>, 
+                    <span class="font-mono bg-slate-100 px-2 py-0.5 rounded">scripting</span>, 
+                    <span class="font-mono bg-slate-100 px-2 py-0.5 rounded">downloads</span>, and 
+                    <span class="font-mono bg-slate-100 px-2 py-0.5 rounded">storage</span> 
+                    are used only to provide core functionality like capturing screenshots, editing images, and saving files.
+                </p>
+
+                <h2 class="text-3xl font-semibold mt-12 mb-6 flex items-center gap-3">
+                    <span class="text-cyan-400">🚫</span> 
+                    No Tracking
+                </h2>
+                <p class="text-lg">
+                    We do not use analytics, tracking technologies, or third-party services that collect user information.
+                </p>
+
+                <div class="my-12 bg-gradient-to-r from-cyan-50 to-blue-50 border border-cyan-200 rounded-3xl p-8 flex items-center gap-6">
+                    <div class="text-5xl">🛡️</div>
+                    <div>
+                        <p class="text-2xl font-semibold text-slate-900">Your data always remains on your device.</p>
+                        <p class="text-slate-600 mt-2">Everything is processed 100% locally in your browser.</p>
+                    </div>
+                </div>
+
+                <h2 class="text-3xl font-semibold mt-12 mb-6 flex items-center gap-3">
+                    <span class="text-cyan-400">✉️</span> 
+                    Contact Us
+                </h2>
+                <p class="text-lg">
+                    If you have any questions, contact us at: 
+                    <a href="mailto:your-email@example.com" class="text-cyan-500 hover:text-cyan-600 font-medium underline">your-email@example.com</a>
+                </p>
+            </div>
+
+            <!-- Extra Info Added (as requested) -->
+            <div class="mt-16 pt-12 border-t border-slate-200">
+                <h2 class="text-3xl font-semibold mb-8">Additional Information</h2>
+                
+                <div class="grid md:grid-cols-2 gap-8">
+                    <div class="bg-slate-50 p-8 rounded-3xl">
+                        <h3 class="font-semibold text-xl mb-4 flex items-center gap-2">
+                            <span>🌍</span> Scope of This Policy
+                        </h3>
+                        <p class="text-slate-600">This Privacy Policy applies only to the ScreenSnap Chrome extension. It does not cover any other products, websites, or services.</p>
+                    </div>
+                    
+                    <div class="bg-slate-50 p-8 rounded-3xl">
+                        <h3 class="font-semibold text-xl mb-4 flex items-center gap-2">
+                            <span>🔄</span> Policy Updates
+                        </h3>
+                        <p class="text-slate-600">We may update this page occasionally. You will always see the latest version here with the “Last Updated” date at the top.</p>
+                    </div>
+                    
+                    <div class="bg-slate-50 p-8 rounded-3xl">
+                        <h3 class="font-semibold text-xl mb-4 flex items-center gap-2">
+                            <span>📥</span> Data Export &amp; Deletion
+                        </h3>
+                        <p class="text-slate-600">Since we collect zero data, there is nothing to export or delete. All your screenshots and edits remain only on your device.</p>
+                    </div>
+                    
+                    <div class="bg-slate-50 p-8 rounded-3xl">
+                        <h3 class="font-semibold text-xl mb-4 flex items-center gap-2">
+                            <span>📜</span> Legal
+                        </h3>
+                        <p class="text-slate-600">This extension complies with Chrome Web Store policies and GDPR / CCPA principles by design — because we simply don’t collect any personal information.</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- FINAL CTA / TRUST BAR -->
+    <div class="bg-slate-900 py-12">
+        <div class="max-w-screen-2xl mx-auto px-8 text-center">
+            <p class="text-slate-400 text-sm mb-4">Made with ❤️ for privacy-conscious users</p>
+            <p class="text-cyan-400 font-medium">100% local • No data leaves your browser • Ever.</p>
+            
+            <div class="mt-10 flex flex-wrap justify-center gap-8 text-xs uppercase tracking-widest opacity-70">
+                <div>🔒 End-to-end local processing</div>
+                <div>📸 Screenshots stay private</div>
+                <div>✏️ Edits never uploaded</div>
+                <div>📦 Bulk processing offline</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="bg-black text-slate-500 py-8 text-center text-sm">
+        <div class="max-w-screen-2xl mx-auto px-8">
+            © 2026 ScreenSnap Chrome Extension. All rights reserved.<br>
+            Your screenshots. Your edits. Your device. Always.
+        </div>
+    </footer>
+
+    <script>
+        // Tailwind initialization (optional but makes it perfect)
+        function initializeTailwind() {
+            return {
+                config(userConfig = {}) {
+                    return {
+                        configUser: userConfig,
+                        theme: {
+                            extend: {
+                                colors: {
+                                    primary: '#00d4ff'
+                                }
+                            }
+                        }
+                    }
+                },
+                theme: {
+                    extend: {}
+                }
+            }
+        }
+        document.addEventListener('DOMContentLoaded', () => {
+            return;
+        })
+    </script>
 </body>
 </html>
